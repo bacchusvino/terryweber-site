@@ -61,6 +61,92 @@
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   
   <link rel="stylesheet" href="/css/main.css">
+  
+  <style>
+    /* Visually hidden but accessible to screen readers */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    /* Custom SVG Icons for Board Value cards */
+    .expertise-card__icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .expertise-card__icon svg {
+      width: 32px;
+      height: 32px;
+      stroke: #c9a227;
+      stroke-width: 1.5;
+      fill: none;
+    }
+    
+    /* Press Logo Bar */
+    .press-bar {
+      background: #f8f7f5;
+      padding: 2rem 0;
+      border-top: 1px solid #e8e6e1;
+      border-bottom: 1px solid #e8e6e1;
+    }
+    
+    .press-bar__label {
+      text-align: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #5a5a6a;
+      margin-bottom: 1.5rem;
+    }
+    
+    .press-bar__logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+    
+    .press-bar__logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2a2a35;
+      opacity: 0.6;
+      transition: opacity 0.3s ease;
+    }
+    
+    .press-bar__logo:hover {
+      opacity: 1;
+    }
+    
+    /* Testimonial placeholder */
+    .testimonial-placeholder {
+      background: rgba(255,255,255,0.08);
+      border: 1px dashed rgba(255,255,255,0.2);
+      padding: 2rem;
+      border-radius: 4px;
+      margin-top: 2rem;
+    }
+    
+    .testimonial-placeholder p {
+      color: rgba(255,255,255,0.5);
+      font-style: italic;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
@@ -128,6 +214,21 @@
       </div>
     </section>
 
+    <!-- As Seen In Press Bar -->
+    <section class="press-bar" aria-labelledby="press-title">
+      <div class="container">
+        <p id="press-title" class="press-bar__label">As Featured In</p>
+        <div class="press-bar__logos">
+          <span class="press-bar__logo">Forbes</span>
+          <span class="press-bar__logo">Fast Company</span>
+          <span class="press-bar__logo">USA Today</span>
+          <span class="press-bar__logo">The New York Times</span>
+          <span class="press-bar__logo">Business Insider</span>
+          <span class="press-bar__logo">Kiplinger</span>
+        </div>
+      </div>
+    </section>
+
     <!-- What I Bring to a Board -->
     <section class="section--cream" aria-labelledby="board-value-title">
       <div class="container">
@@ -137,37 +238,71 @@
         
         <div class="expertise-grid">
           <div class="expertise-card">
-            <div class="expertise-card__icon">📈</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">SPAC Survivor</h3>
             <p class="expertise-card__desc">Took Biote public via SPAC in 2022 and stayed as CEO for years afterward. Most SPAC CEOs fail or get replaced. I landed it, executed it, and sustained performance.</p>
           </div>
           
           <div class="expertise-card">
-            <div class="expertise-card__icon">🔥</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">Corporate Firefighter</h3>
             <p class="expertise-card__desc">I fix broken operations in operationally brutal industries—auto parts, lingerie, brain-health clinics, hormone therapy. I modernize brands, rebuild leadership, and scale profitably.</p>
           </div>
           
           <div class="expertise-card">
-            <div class="expertise-card__icon">🤝</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">Founder Whisperer</h3>
             <p class="expertise-card__desc">Founder-led companies mean chaos, emotion, and lack of process. I fix the mess, keep the founder happy, AND scale the company. Very few CEOs can do all three.</p>
           </div>
           
           <div class="expertise-card">
-            <div class="expertise-card__icon">🔗</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">Six-Industry Pattern Matcher</h3>
             <p class="expertise-card__desc">Healthcare, retail, automotive, neuroscience, beauty, finance. Most CEOs master one vertical. I read patterns across all of them. That's rare at the national level.</p>
           </div>
           
           <div class="expertise-card">
-            <div class="expertise-card__icon">⚖️</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">SEC Audit Committee Qualified</h3>
             <p class="expertise-card__desc">Boards desperately need directors who understand audit and risk. This credential makes me immediately recruitable for public company boards.</p>
           </div>
           
           <div class="expertise-card">
-            <div class="expertise-card__icon">👥</div>
+            <div class="expertise-card__icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
             <h3 class="expertise-card__title">Large-Scale Operator</h3>
             <p class="expertise-card__desc">500+ employee companies, multi-location clinic networks, national retail chains, complex supply chains. Most CEOs never handle that scale. I've done it repeatedly.</p>
           </div>
@@ -210,13 +345,18 @@
       </div>
     </section>
 
-    <!-- Quote -->
+    <!-- Quote / Testimonial -->
     <section class="section--navy" aria-labelledby="quote-title">
       <div class="container">
         <h2 id="quote-title" class="visually-hidden">Recognition</h2>
         <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--gold);">
           <p class="quote-block__text" style="color: white;">"Recognized nationally for transformational leadership across healthcare, retail, and technology."</p>
-          <p class="quote-block__cite" style="color: rgba(255,255,255,0.7);"><strong style="color: white;">Featured in:</strong> Forbes, Fast Company, USA Today, NY Times, Business Insider, Kiplinger</p>
+          <p class="quote-block__cite" style="color: rgba(255,255,255,0.7);"><strong style="color: white;">PharmaVOICE 100 Most Inspiring People</strong> · 2021</p>
+        </div>
+        
+        <!-- Testimonial Placeholder for Client -->
+        <div class="testimonial-placeholder">
+          <p>[Placeholder: Quote from Board Chair or Founder regarding Terry's impact on company transformation or IPO process]</p>
         </div>
       </div>
     </section>
@@ -296,7 +436,6 @@
       
       <div class="footer-bottom">
         <p>&copy; 2025 Terry Weber. All rights reserved.</p>
-        <p>Site by <a href="https://mygeekmac.com" style="color: var(--gold);">Josh Pirtle</a></p>
       </div>
     </div>
   </footer>
@@ -313,20 +452,5 @@
       });
     }
   </script>
-  
-  <style>
-    /* Visually hidden but accessible to screen readers */
-    .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-  </style>
 </body>
 </html>
