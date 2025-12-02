@@ -1,1369 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>Terry Weber | Transformational CEO & Board Director</title>
-    <meta name="description" content="Terry Weber - 30+ years transforming healthcare, retail, and automotive companies. Former CEO of Biote (NASDAQ: BTMD), Amen Clinics. Seeking board opportunities.">
-    <meta name="keywords" content="Terry Weber, board director, CEO, Biote, healthcare executive, board member, women in leadership, corporate governance">
-    <meta name="author" content="Terry Weber">
-
-    <!-- Open Graph / Social -->
-    <meta property="og:title" content="Terry Weber | Board Director & Healthcare CEO">
-    <meta property="og:description" content="30+ years transforming companies. Former CEO of Biote (NASDAQ), Amen Clinics. Open to board opportunities.">
-    <meta property="og:image" content="./img/terry-weber-og.jpg">
-    <meta property="og:url" content="https://terryweber.com">
-    <meta property="og:type" content="profile">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Terry Weber | Board Director & Healthcare CEO">
-    <meta name="twitter:description" content="30+ years transforming companies. Former CEO of Biote (NASDAQ), Amen Clinics.">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Terry Weber",
-        "jobTitle": "Board Director & Former CEO",
-        "description": "Transformational healthcare and retail executive with 30+ years of CEO experience across multiple industries",
-        "url": "https://terryweber.com",
-        "email": "terrysweber@gmail.com",
-        "telephone": "+1-405-615-0399",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Irving",
-            "addressRegion": "TX",
-            "addressCountry": "US"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/terry-weber-17677020/"
-        ],
-        "alumniOf": [
-            { "@type": "Organization", "name": "Purdue University" },
-            { "@type": "Organization", "name": "New College of Florida" }
-        ],
-        "worksFor": {
-            "@type": "Organization",
-            "name": "PreventiveMedicine.org"
-        },
-        "knowsAbout": ["Corporate Governance", "Healthcare Strategy", "Business Transformation", "SPAC Transactions", "Turnaround Management"]
-    }
-    </script>
-
-    <style>
-        /* =============================================
-           CSS CUSTOM PROPERTIES
-        ============================================= */
-        :root {
-            --ink: #0a0a0f;
-            --ink-soft: #12121a;
-            --cream: #faf8f5;
-            --cream-warm: #f5f3f0;
-            --gold: #c9a227;
-            --gold-soft: #d4b84a;
-            --gold-dark: #a8861f;
-            --charcoal: #2a2a35;
-            --slate: #5a5a6a;
-            --mist: #e8e6e1;
-            --mist-dark: #d5d3ce;
-
-            --font-display: 'Cormorant Garamond', Georgia, serif;
-            --font-body: 'Outfit', system-ui, sans-serif;
-
-            --space-xs: 0.5rem;
-            --space-sm: 1rem;
-            --space-md: 1.5rem;
-            --space-lg: 2.5rem;
-            --space-xl: 4rem;
-            --space-2xl: 6rem;
-            --space-3xl: 8rem;
-
-            --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-            --transition-fast: 0.2s var(--ease-out);
-            --transition-medium: 0.4s var(--ease-out);
-            --transition-slow: 0.6s var(--ease-out);
-
-            --max-width: 1200px;
-            --max-width-narrow: 900px;
-        }
-
-        /* =============================================
-           RESET & BASE
-        ============================================= */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: var(--font-body);
-            font-weight: 400;
-            line-height: 1.6;
-            color: var(--charcoal);
-            background-color: var(--cream);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        :focus-visible {
-            outline: 3px solid var(--gold);
-            outline-offset: 3px;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: -100%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--gold);
-            color: var(--ink);
-            padding: var(--space-sm) var(--space-md);
-            font-weight: 500;
-            z-index: 9999;
-            border-radius: 0 0 4px 4px;
-            transition: top var(--transition-fast);
-        }
-
-        .skip-link:focus {
-            top: 0;
-        }
-
-        /* =============================================
-           TYPOGRAPHY
-        ============================================= */
-        h1, h2, h3, h4 {
-            font-family: var(--font-display);
-            font-weight: 500;
-            line-height: 1.15;
-            color: var(--ink);
-        }
-
-        h1 {
-            font-size: clamp(2.25rem, 5vw, 3.5rem);
-            letter-spacing: -0.02em;
-        }
-
-        h2 {
-            font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-            letter-spacing: -0.01em;
-        }
-
-        h3 {
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
-        }
-
-        .text-gold { color: var(--gold); }
-        .text-slate { color: var(--slate); }
-        .text-cream { color: var(--cream); }
-
-        .uppercase {
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            font-size: 0.6875rem;
-            font-weight: 600;
-        }
-
-        /* =============================================
-           LAYOUT
-        ============================================= */
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-md);
-        }
-
-        .container--narrow {
-            max-width: var(--max-width-narrow);
-        }
-
-        .section {
-            padding: var(--space-2xl) 0;
-        }
-
-        .section--dark {
-            background-color: var(--ink);
-            color: var(--cream);
-        }
-
-        .section--dark h1,
-        .section--dark h2,
-        .section--dark h3 {
-            color: var(--cream);
-        }
-
-        .section--mist {
-            background-color: var(--cream-warm);
-        }
-
-        /* =============================================
-           ANIMATIONS
-        ============================================= */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(24px);
-            transition: opacity var(--transition-slow), transform var(--transition-slow);
-        }
-
-        .animate-on-scroll.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .delay-1 { transition-delay: 0.1s; }
-        .delay-2 { transition-delay: 0.2s; }
-        .delay-3 { transition-delay: 0.3s; }
-        .delay-4 { transition-delay: 0.4s; }
-
-        /* =============================================
-           HEADER
-        ============================================= */
-        .header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
-            padding: var(--space-sm) 0;
-            transition: background var(--transition-medium), padding var(--transition-medium);
-        }
-
-        .header.is-scrolled {
-            background: rgba(10, 10, 15, 0.97);
-            backdrop-filter: blur(12px);
-        }
-
-        .header__inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header__logo {
-            font-family: var(--font-display);
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: var(--cream);
-            letter-spacing: 0.02em;
-        }
-
-        .header__nav {
-            display: flex;
-            gap: var(--space-lg);
-        }
-
-        .header__link {
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: rgba(255,255,255,0.7);
-            transition: color var(--transition-fast);
-        }
-
-        .header__link:hover,
-        .header__link:focus {
-            color: var(--cream);
-        }
-
-        .nav-toggle {
-            display: none;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            padding: var(--space-xs);
-        }
-
-        .nav-toggle span {
-            display: block;
-            width: 22px;
-            height: 2px;
-            background: var(--cream);
-            margin: 5px 0;
-            transition: var(--transition-fast);
-        }
-
-        @media (max-width: 768px) {
-            .nav-toggle { display: block; }
-
-            .header__nav {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                background: var(--ink);
-                padding: var(--space-md);
-                gap: var(--space-md);
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(-10px);
-                transition: var(--transition-medium);
-            }
-
-            .header__nav.is-open {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-        }
-
-        /* =============================================
-           BUTTONS
-        ============================================= */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            font-family: var(--font-body);
-            font-size: 0.8125rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            border: none;
-            cursor: pointer;
-            transition: all var(--transition-fast);
-        }
-
-        .btn--primary {
-            background: var(--gold);
-            color: var(--ink);
-        }
-
-        .btn--primary:hover,
-        .btn--primary:focus {
-            background: var(--gold-soft);
-            transform: translateY(-2px);
-        }
-
-        .btn--outline {
-            background: transparent;
-            color: var(--cream);
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-
-        .btn--outline:hover,
-        .btn--outline:focus {
-            border-color: var(--gold);
-            color: var(--gold);
-        }
-
-        .btn--ghost {
-            background: transparent;
-            color: var(--cream);
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--gold);
-        }
-
-        .btn--ghost:hover {
-            color: var(--gold);
-        }
-
-        /* =============================================
-           SECTION 1: HERO
-        ============================================= */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: var(--ink);
-            position: relative;
-            overflow: hidden;
-            padding-top: 80px;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse at 70% 20%, rgba(201, 162, 39, 0.08) 0%, transparent 50%);
-            pointer-events: none;
-        }
-
-        .hero__grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: var(--space-2xl);
-            align-items: center;
-        }
-
-        .hero__content {
-            animation: fadeUp 0.8s var(--ease-out) forwards;
-        }
-
-        .hero__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-            display: inline-block;
-        }
-
-        .hero__title {
-            color: var(--cream);
-            margin-bottom: var(--space-md);
-            line-height: 1.1;
-        }
-
-        .hero__tagline {
-            font-size: 1.125rem;
-            color: rgba(255,255,255,0.75);
-            margin-bottom: var(--space-lg);
-            line-height: 1.7;
-        }
-
-        .hero__tagline strong {
-            color: var(--cream);
-            font-weight: 500;
-        }
-
-        .hero__cta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-sm);
-            margin-bottom: var(--space-lg);
-        }
-
-        .hero__credentials {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-md);
-            padding-top: var(--space-md);
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .hero__credential {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.5);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .hero__credential strong {
-            color: var(--gold);
-            display: block;
-            font-size: 1.5rem;
-            font-family: var(--font-display);
-            font-weight: 600;
-            letter-spacing: 0;
-            text-transform: none;
-            margin-bottom: 2px;
-        }
-
-        .hero__image {
-            position: relative;
-            animation: fadeIn 1s var(--ease-out) 0.3s forwards;
-            opacity: 0;
-        }
-
-        .hero__image::before {
-            content: '';
-            position: absolute;
-            top: -16px;
-            right: -16px;
-            bottom: 16px;
-            left: 16px;
-            border: 1px solid var(--gold);
-            opacity: 0.25;
-        }
-
-        .hero__image img {
-            position: relative;
-            width: 100%;
-            max-width: 420px;
-            aspect-ratio: 4/5;
-            object-fit: cover;
-            filter: grayscale(15%) contrast(1.02);
-        }
-
-        @media (max-width: 968px) {
-            .hero__grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero__cta {
-                justify-content: center;
-            }
-
-            .hero__credentials {
-                justify-content: center;
-            }
-
-            .hero__image {
-                order: -1;
-                max-width: 320px;
-                margin: 0 auto;
-            }
-        }
-
-        /* =============================================
-           SECTION 2: CREDIBILITY STRIP
-        ============================================= */
-        .credibility {
-            background: var(--ink-soft);
-            padding: var(--space-lg) 0;
-            border-top: 1px solid rgba(255,255,255,0.05);
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .credibility__inner {
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-md);
-        }
-
-        .credibility__logos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: var(--space-lg);
-        }
-
-        .credibility__logo {
-            font-family: var(--font-display);
-            font-size: 1rem;
-            font-weight: 600;
-            color: rgba(255,255,255,0.4);
-            white-space: nowrap;
-            transition: color var(--transition-fast);
-        }
-
-        .credibility__logo--company {
-            color: rgba(255,255,255,0.6);
-        }
-
-        .credibility__logo:hover {
-            color: var(--cream);
-        }
-
-        .credibility__divider {
-            width: 1px;
-            height: 24px;
-            background: rgba(255,255,255,0.15);
-        }
-
-        .credibility__press {
-            text-align: center;
-            font-size: 0.8125rem;
-            color: rgba(255,255,255,0.5);
-        }
-
-        .credibility__press strong {
-            color: var(--gold);
-        }
-
-        @media (max-width: 768px) {
-            .credibility__divider { display: none; }
-            .credibility__logos { gap: var(--space-md); }
-            .credibility__logo { font-size: 0.875rem; }
-        }
-
-        /* =============================================
-           SECTION 3: BOARD VALUE PROPOSITION
-        ============================================= */
-        .value-prop {
-            text-align: center;
-        }
-
-        .value-prop__header {
-            margin-bottom: var(--space-xl);
-        }
-
-        .value-prop__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .value-prop__list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-md);
-            text-align: left;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .value-prop__item {
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-sm);
-            padding: var(--space-md);
-            background: var(--cream);
-            border: 1px solid var(--mist);
-            transition: all var(--transition-fast);
-        }
-
-        .value-prop__item:hover {
-            border-color: var(--gold);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(10, 10, 15, 0.06);
-        }
-
-        .value-prop__icon {
-            flex-shrink: 0;
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--gold);
-            color: var(--ink);
-            font-weight: 700;
-            font-size: 0.875rem;
-        }
-
-        .value-prop__text {
-            font-size: 0.9375rem;
-            color: var(--charcoal);
-            line-height: 1.5;
-        }
-
-        .value-prop__text strong {
-            color: var(--ink);
-            font-weight: 600;
-        }
-
-        /* =============================================
-           SECTION 4: POWER DIFFERENTIATORS
-        ============================================= */
-        .differentiators {
-            background: var(--ink);
-        }
-
-        .differentiators__header {
-            text-align: center;
-            margin-bottom: var(--space-xl);
-        }
-
-        .differentiators__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .differentiators__grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--space-md);
-        }
-
-        .diff-card {
-            padding: var(--space-lg);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: all var(--transition-medium);
-            position: relative;
-        }
-
-        .diff-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: var(--gold);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform var(--transition-medium);
-        }
-
-        .diff-card:hover {
-            border-color: rgba(255,255,255,0.2);
-            background: rgba(255,255,255,0.02);
-        }
-
-        .diff-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .diff-card__icon {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-md);
-            font-size: 1.5rem;
-        }
-
-        .diff-card__title {
-            font-size: 1.25rem;
-            color: var(--cream);
-            margin-bottom: var(--space-sm);
-        }
-
-        .diff-card__text {
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.6);
-            line-height: 1.6;
-        }
-
-        @media (max-width: 968px) {
-            .differentiators__grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 580px) {
-            .differentiators__grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* =============================================
-           SECTION 5: EXECUTIVE EXPERIENCE
-        ============================================= */
-        .experience__header {
-            text-align: center;
-            margin-bottom: var(--space-xl);
-        }
-
-        .experience__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-md);
-        }
-
-        .timeline-card {
-            padding: var(--space-lg);
-            background: var(--cream);
-            border: 1px solid var(--mist);
-            border-left: 3px solid var(--gold);
-            transition: all var(--transition-fast);
-        }
-
-        .timeline-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 32px rgba(10, 10, 15, 0.08);
-        }
-
-        .timeline-card__dates {
-            font-size: 0.6875rem;
-            color: var(--gold);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 4px;
-        }
-
-        .timeline-card__company {
-            font-family: var(--font-display);
-            font-size: 1.375rem;
-            font-weight: 600;
-            color: var(--ink);
-            margin-bottom: 4px;
-        }
-
-        .timeline-card__role {
-            font-size: 0.875rem;
-            color: var(--slate);
-            margin-bottom: var(--space-sm);
-        }
-
-        .timeline-card__metric {
-            display: inline-block;
-            padding: 4px 10px;
-            background: var(--ink);
-            color: var(--gold);
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-bottom: var(--space-xs);
-        }
-
-        .timeline-card__achievement {
-            font-size: 0.875rem;
-            color: var(--charcoal);
-            font-style: italic;
-        }
-
-        /* =============================================
-           SECTION 6: MEDIA & RECOGNITION
-        ============================================= */
-        .recognition {
-            background: var(--cream-warm);
-        }
-
-        .recognition__header {
-            text-align: center;
-            margin-bottom: var(--space-xl);
-        }
-
-        .recognition__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .recognition__quote {
-            max-width: 800px;
-            margin: 0 auto var(--space-xl);
-            text-align: center;
-        }
-
-        .recognition__quote blockquote {
-            font-family: var(--font-display);
-            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-            font-style: italic;
-            color: var(--charcoal);
-            line-height: 1.5;
-            position: relative;
-            padding: 0 var(--space-lg);
-        }
-
-        .recognition__quote blockquote::before {
-            content: '"';
-            position: absolute;
-            left: 0;
-            top: -10px;
-            font-size: 4rem;
-            color: var(--gold);
-            opacity: 0.3;
-            font-family: var(--font-display);
-            line-height: 1;
-        }
-
-        .awards-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
-        }
-
-        .award-card {
-            text-align: center;
-            padding: var(--space-lg);
-            background: var(--cream);
-            border: 1px solid var(--mist);
-        }
-
-        .award-card__year {
-            font-family: var(--font-display);
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--gold);
-            line-height: 1;
-            margin-bottom: var(--space-xs);
-        }
-
-        .award-card__title {
-            font-size: 0.9375rem;
-            color: var(--charcoal);
-        }
-
-        @media (max-width: 768px) {
-            .awards-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* =============================================
-           SECTION 7: CONTACT
-        ============================================= */
-        .contact {
-            background: var(--ink);
-            text-align: center;
-        }
-
-        .contact__header {
-            margin-bottom: var(--space-xl);
-        }
-
-        .contact__eyebrow {
-            color: var(--gold);
-            margin-bottom: var(--space-sm);
-        }
-
-        .contact__title {
-            color: var(--cream);
-            margin-bottom: var(--space-sm);
-        }
-
-        .contact__subtitle {
-            font-size: 1.0625rem;
-            color: rgba(255,255,255,0.6);
-        }
-
-        .contact__grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: var(--space-xl);
-            margin-bottom: var(--space-xl);
-        }
-
-        .contact__item {
-            text-align: center;
-        }
-
-        .contact__label {
-            font-size: 0.6875rem;
-            color: rgba(255,255,255,0.4);
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            margin-bottom: 4px;
-        }
-
-        .contact__value {
-            font-family: var(--font-display);
-            font-size: 1.125rem;
-            color: var(--cream);
-            transition: color var(--transition-fast);
-        }
-
-        .contact__value:hover {
-            color: var(--gold);
-        }
-
-        .contact__cta {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: var(--space-sm);
-        }
-
-        /* =============================================
-           FOOTER
-        ============================================= */
-        .footer {
-            background: var(--ink);
-            border-top: 1px solid rgba(255,255,255,0.05);
-            padding: var(--space-md) 0;
-            text-align: center;
-        }
-
-        .footer__text {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.4);
-        }
-
-        .footer__link {
-            color: rgba(255,255,255,0.6);
-            transition: color var(--transition-fast);
-        }
-
-        .footer__link:hover {
-            color: var(--gold);
-        }
-
-        /* =============================================
-           REDUCED MOTION
-        ============================================= */
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-            html { scroll-behavior: auto; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terry Weber | Healthcare Executive & Board Director</title>
+  <meta name="description" content="Healthcare CEO who led Biote through its NASDAQ IPO. Board-ready executive with expertise in growth strategy, M&A, and commercialization. Seeking board positions in healthcare, biopharma, and growth-stage companies.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terry Weber | Healthcare Executive & Board Director">
+  <meta property="og:description" content="Healthcare CEO who led Biote through its NASDAQ IPO. Board-ready executive with expertise in growth strategy, M&A, and commercialization.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://terryweber.com">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-brand">Terry Weber</a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="site-nav" id="main-nav">
+        <a href="/about.html">About</a>
+        <a href="/track-record.html">Track Record</a>
+        <a href="/thought-leadership.html">Insights</a>
+        <a href="/contact.html" class="nav-cta">Connect</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- HEADER -->
-    <header class="header" role="banner">
-        <div class="container">
-            <div class="header__inner">
-                <a href="#" class="header__logo" aria-label="Terry Weber - Home">Terry Weber</a>
-                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <nav class="header__nav" id="main-nav" aria-label="Main navigation">
-                    <a href="#value" class="header__link">Board Value</a>
-                    <a href="#differentiators" class="header__link">Why Terry</a>
-                    <a href="#experience" class="header__link">Experience</a>
-                    <a href="#recognition" class="header__link">Recognition</a>
-                    <a href="#contact" class="header__link">Connect</a>
-                </nav>
-            </div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Healthcare Executive · Board Director</p>
+          <h1 class="hero__title">Building companies that <em>transform</em> patient lives</h1>
+          <p class="hero__lede">I'm Terry Weber—a healthcare CEO who has led companies from growth stage through public markets. I specialize in turning ambitious vision into operational reality, most recently taking Biote from emerging brand to NASDAQ-listed leader in hormone optimization.</p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="/contact.html" class="btn btn--primary">Let's Connect</a>
+            <a href="/assets/terry-weber-board-bio.pdf" class="btn btn--secondary">Download Bio</a>
+          </div>
         </div>
-    </header>
-
-    <main id="main-content">
-
-        <!-- =============================================
-             SECTION 1: HERO
-        ============================================= -->
-        <section class="hero section--dark" aria-labelledby="hero-title">
-            <div class="container">
-                <div class="hero__grid">
-                    <div class="hero__content">
-                        <span class="hero__eyebrow uppercase">Board Director & Transformation CEO</span>
-                        <h1 id="hero-title" class="hero__title">Transformation CEO.<br>Board-Ready Operator.</h1>
-                        <p class="hero__tagline">
-                            <strong>CEO across 6 industries</strong> · Scales founder-led companies · <strong>SPAC-tested operator</strong> with $1.5B P&L experience
-                        </p>
-                        <div class="hero__cta">
-                            <a href="mailto:terrysweber@gmail.com" class="btn btn--primary">Email Terry</a>
-                            <a href="https://www.linkedin.com/in/terry-weber-17677020/" class="btn btn--outline" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            <a href="./resume.pdf" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download Board Bio ↓</a>
-                        </div>
-                        <div class="hero__credentials">
-                            <div class="hero__credential">
-                                <strong>8</strong>
-                                CEO Positions
-                            </div>
-                            <div class="hero__credential">
-                                <strong>$199M</strong>
-                                Peak Revenue
-                            </div>
-                            <div class="hero__credential">
-                                <strong>200%</strong>
-                                EBITDA Growth
-                            </div>
-                            <div class="hero__credential">
-                                <strong>30+</strong>
-                                Years Executive
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hero__image">
-                        <img src="./img/terry-weber-headshot.jpeg"
-                             alt="Terry Weber - Executive Board Director and Transformation CEO"
-                             width="420"
-                             height="525"
-                             loading="eager">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 2: CREDIBILITY STRIP
-        ============================================= -->
-        <section class="credibility section--dark" aria-label="Career highlights and press features">
-            <div class="container">
-                <div class="credibility__inner">
-                    <div class="credibility__logos">
-                        <span class="credibility__logo credibility__logo--company">Biote (NASDAQ: BTMD)</span>
-                        <span class="credibility__logo credibility__logo--company">Amen Clinics</span>
-                        <span class="credibility__logo credibility__logo--company">BrainMD</span>
-                        <span class="credibility__logo credibility__logo--company">Frederick's of Hollywood</span>
-                        <span class="credibility__divider" aria-hidden="true"></span>
-                        <span class="credibility__logo">Forbes</span>
-                        <span class="credibility__logo">Fast Company</span>
-                        <span class="credibility__logo">USA Today</span>
-                        <span class="credibility__logo">NYT</span>
-                        <span class="credibility__logo">Business Insider</span>
-                    </div>
-                    <p class="credibility__press">
-                        Featured in <strong>Forbes</strong>, <strong>Fast Company</strong>, <strong>USA Today</strong>, and <strong>The New York Times</strong>.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 3: BOARD VALUE PROPOSITION
-        ============================================= -->
-        <section id="value" class="value-prop section section--mist" aria-labelledby="value-heading">
-            <div class="container">
-                <header class="value-prop__header">
-                    <span class="value-prop__eyebrow uppercase animate-on-scroll">Why Boards Hire Terry</span>
-                    <h2 id="value-heading" class="animate-on-scroll delay-1">Board Value Proposition</h2>
-                </header>
-                <div class="value-prop__list">
-                    <div class="value-prop__item animate-on-scroll">
-                        <span class="value-prop__icon" aria-hidden="true">1</span>
-                        <p class="value-prop__text"><strong>SEC Audit Committee Qualified</strong> — Immediate credentialing for audit and risk oversight</p>
-                    </div>
-                    <div class="value-prop__item animate-on-scroll delay-1">
-                        <span class="value-prop__icon" aria-hidden="true">2</span>
-                        <p class="value-prop__text"><strong>SPAC-to-NASDAQ operator</strong> — Took Biote public and stayed as CEO for years</p>
-                    </div>
-                    <div class="value-prop__item animate-on-scroll delay-2">
-                        <span class="value-prop__icon" aria-hidden="true">3</span>
-                        <p class="value-prop__text"><strong>$1.5B P&L experience</strong> — Large-scale operator across public and private companies</p>
-                    </div>
-                    <div class="value-prop__item animate-on-scroll delay-3">
-                        <span class="value-prop__icon" aria-hidden="true">4</span>
-                        <p class="value-prop__text"><strong>Six-industry pattern recognition</strong> — Translates insights across healthcare, retail, automotive, tech</p>
-                    </div>
-                    <div class="value-prop__item animate-on-scroll">
-                        <span class="value-prop__icon" aria-hidden="true">5</span>
-                        <p class="value-prop__text"><strong>Turnaround specialist</strong> — Rescues operationally brutal businesses others avoid</p>
-                    </div>
-                    <div class="value-prop__item animate-on-scroll delay-1">
-                        <span class="value-prop__icon" aria-hidden="true">6</span>
-                        <p class="value-prop__text"><strong>National media platform</strong> — Thought leader with reach across Forbes, NYT, USA Today</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 4: POWER DIFFERENTIATORS
-        ============================================= -->
-        <section id="differentiators" class="differentiators section section--dark" aria-labelledby="diff-heading">
-            <div class="container">
-                <header class="differentiators__header">
-                    <span class="differentiators__eyebrow uppercase animate-on-scroll">What Sets Terry Apart</span>
-                    <h2 id="diff-heading" class="animate-on-scroll delay-1">The Power Differentiators</h2>
-                </header>
-                <div class="differentiators__grid">
-                    <article class="diff-card animate-on-scroll">
-                        <div class="diff-card__icon" aria-hidden="true">📈</div>
-                        <h3 class="diff-card__title">SPAC Survivor</h3>
-                        <p class="diff-card__text">Took Biote public via SPAC in 2022 — stayed as CEO for years. Most SPAC CEOs fail or get replaced. She executed and sustained.</p>
-                    </article>
-                    <article class="diff-card animate-on-scroll delay-1">
-                        <div class="diff-card__icon" aria-hidden="true">🔥</div>
-                        <h3 class="diff-card__title">Corporate Firefighter</h3>
-                        <p class="diff-card__text">Boards hire her when things are on fire and they need a grownup. She fixes operationally brutal industries others avoid.</p>
-                    </article>
-                    <article class="diff-card animate-on-scroll delay-2">
-                        <div class="diff-card__icon" aria-hidden="true">🤝</div>
-                        <h3 class="diff-card__title">Founder Whisperer</h3>
-                        <p class="diff-card__text">Fixes founder chaos, keeps the founder happy, AND scales the company. Very few CEOs can do all three.</p>
-                    </article>
-                    <article class="diff-card animate-on-scroll delay-3">
-                        <div class="diff-card__icon" aria-hidden="true">🔗</div>
-                        <h3 class="diff-card__title">Six-Industry Pattern Matcher</h3>
-                        <p class="diff-card__text">Automotive, retail, healthcare, neuroscience, nutraceuticals, finance. Reads patterns across all of them.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 5: EXECUTIVE EXPERIENCE
-        ============================================= -->
-        <section id="experience" class="experience section" aria-labelledby="exp-heading">
-            <div class="container">
-                <header class="experience__header">
-                    <span class="experience__eyebrow uppercase animate-on-scroll">Leadership Track Record</span>
-                    <h2 id="exp-heading" class="animate-on-scroll delay-1">Executive Experience</h2>
-                </header>
-                <div class="timeline">
-                    <article class="timeline-card animate-on-scroll">
-                        <span class="timeline-card__dates">2019 – 2025</span>
-                        <h3 class="timeline-card__company">Biote Medical</h3>
-                        <p class="timeline-card__role">Chief Executive Officer</p>
-                        <span class="timeline-card__metric">$199M Revenue | NASDAQ: BTMD</span>
-                        <p class="timeline-card__achievement">Led SPAC IPO in 2022; grew EBITDA 200%</p>
-                    </article>
-                    <article class="timeline-card animate-on-scroll delay-1">
-                        <span class="timeline-card__dates">2015 – 2019</span>
-                        <h3 class="timeline-card__company">Amen Clinics</h3>
-                        <p class="timeline-card__role">Chief Executive Officer</p>
-                        <span class="timeline-card__metric">Brain Health Network</span>
-                        <p class="timeline-card__achievement">Scaled multi-location psychiatry clinics nationally</p>
-                    </article>
-                    <article class="timeline-card animate-on-scroll delay-2">
-                        <span class="timeline-card__dates">2015 – 2019</span>
-                        <h3 class="timeline-card__company">BrainMD</h3>
-                        <p class="timeline-card__role">Chief Executive Officer</p>
-                        <span class="timeline-card__metric">Nutraceuticals</span>
-                        <p class="timeline-card__achievement">Built consumer health brand from startup</p>
-                    </article>
-                    <article class="timeline-card animate-on-scroll delay-3">
-                        <span class="timeline-card__dates">1997 – 1999</span>
-                        <h3 class="timeline-card__company">Frederick's of Hollywood</h3>
-                        <p class="timeline-card__role">Chief Executive Officer</p>
-                        <span class="timeline-card__metric">First Woman CEO</span>
-                        <p class="timeline-card__achievement">First female CEO of a lingerie company</p>
-                    </article>
-                    <article class="timeline-card animate-on-scroll">
-                        <span class="timeline-card__dates">1994 – 1997</span>
-                        <h3 class="timeline-card__company">WSR Corp / Strauss Auto</h3>
-                        <p class="timeline-card__role">Chief Executive Officer</p>
-                        <span class="timeline-card__metric">National Retail</span>
-                        <p class="timeline-card__achievement">Turnaround of national auto parts chain</p>
-                    </article>
-                    <article class="timeline-card animate-on-scroll delay-1">
-                        <span class="timeline-card__dates">2006 – 2015</span>
-                        <h3 class="timeline-card__company">Mattioli-Weber Consulting</h3>
-                        <p class="timeline-card__role">Principal</p>
-                        <span class="timeline-card__metric">Fortune 500 Clients</span>
-                        <p class="timeline-card__achievement">Oracle, IBM, Ford, Kroger, Merrill Lynch</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 6: MEDIA & RECOGNITION
-        ============================================= -->
-        <section id="recognition" class="recognition section section--mist" aria-labelledby="rec-heading">
-            <div class="container">
-                <header class="recognition__header">
-                    <span class="recognition__eyebrow uppercase animate-on-scroll">National Platform</span>
-                    <h2 id="rec-heading" class="animate-on-scroll delay-1">Media & Recognition</h2>
-                </header>
-                <div class="recognition__quote animate-on-scroll">
-                    <blockquote>
-                        Recognized nationally for transformational leadership across healthcare, retail, and technology.
-                    </blockquote>
-                </div>
-                <div class="awards-grid">
-                    <article class="award-card animate-on-scroll">
-                        <div class="award-card__year">2024</div>
-                        <p class="award-card__title">Top Women in Business</p>
-                    </article>
-                    <article class="award-card animate-on-scroll delay-1">
-                        <div class="award-card__year">2021</div>
-                        <p class="award-card__title">PharmaVOICE 100 Most Inspiring People in Life Sciences</p>
-                    </article>
-                    <article class="award-card animate-on-scroll delay-2">
-                        <div class="award-card__year">2021</div>
-                        <p class="award-card__title">50 Fastest-Growing Women-Owned/Led Companies</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- =============================================
-             SECTION 7: LET'S CONNECT
-        ============================================= -->
-        <section id="contact" class="contact section section--dark" aria-labelledby="contact-heading">
-            <div class="container container--narrow">
-                <header class="contact__header">
-                    <span class="contact__eyebrow uppercase animate-on-scroll">Open to Board Opportunities</span>
-                    <h2 id="contact-heading" class="contact__title animate-on-scroll delay-1">Let's Connect</h2>
-                    <p class="contact__subtitle animate-on-scroll delay-2">Discussing how my experience can contribute to your board's success.</p>
-                </header>
-                <div class="contact__grid animate-on-scroll delay-3">
-                    <div class="contact__item">
-                        <span class="contact__label">Email</span>
-                        <a href="mailto:terrysweber@gmail.com" class="contact__value">terrysweber@gmail.com</a>
-                    </div>
-                    <div class="contact__item">
-                        <span class="contact__label">Phone</span>
-                        <a href="tel:+14056150399" class="contact__value">405-615-0399</a>
-                    </div>
-                    <div class="contact__item">
-                        <span class="contact__label">Location</span>
-                        <span class="contact__value">Irving, Texas</span>
-                    </div>
-                </div>
-                <div class="contact__cta animate-on-scroll delay-4">
-                    <a href="https://www.linkedin.com/in/terry-weber-17677020/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
-                        Connect on LinkedIn →
-                    </a>
-                    <a href="./resume.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
-                        Download Board Bio
-                    </a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <p class="footer__text">
-                © <span id="current-year">2025</span> Terry Weber ·
-                <a href="https://www.linkedin.com/in/terry-weber-17677020/" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </p>
+        <div class="hero__image">
+          <img src="/img/terry-weber-hero.jpg" alt="Terry Weber, Healthcare Executive" width="400" height="500">
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JAVASCRIPT -->
-    <script>
-        // Mobile navigation toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const mainNav = document.querySelector('.header__nav');
+    <!-- Key Metrics -->
+    <section>
+      <div class="container">
+        <div class="metrics">
+          <div class="metric">
+            <p class="metric__value">$1B+</p>
+            <p class="metric__label">Enterprise Value Created</p>
+          </div>
+          <div class="metric">
+            <p class="metric__value">IPO</p>
+            <p class="metric__label">NASDAQ (BTMD)</p>
+          </div>
+          <div class="metric">
+            <p class="metric__value">25+</p>
+            <p class="metric__label">Years Healthcare Leadership</p>
+          </div>
+          <div class="metric">
+            <p class="metric__value">3</p>
+            <p class="metric__label">CEO Positions</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        navToggle.addEventListener('click', () => {
-            const isOpen = mainNav.classList.toggle('is-open');
-            navToggle.setAttribute('aria-expanded', isOpen);
-        });
+    <!-- What I Bring to a Board -->
+    <section class="section--cream">
+      <div class="container">
+        <p class="section__eyebrow">Board Value</p>
+        <h2 class="section__title">What I bring to the boardroom</h2>
+        <p class="section__intro">My career has been defined by taking healthcare companies through critical inflection points—whether that's preparing for an IPO, navigating regulatory complexity, or building the commercial infrastructure to scale.</p>
+        
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <div class="expertise-card__icon">📈</div>
+            <h3 class="expertise-card__title">Growth Strategy</h3>
+            <p class="expertise-card__desc">Scaling companies from emerging brands to market leaders through disciplined commercial execution and strategic positioning.</p>
+          </div>
+          
+          <div class="expertise-card">
+            <div class="expertise-card__icon">🏛️</div>
+            <h3 class="expertise-card__title">Public Markets</h3>
+            <p class="expertise-card__desc">End-to-end IPO experience including investor relations, SEC compliance, and building the governance infrastructure public companies require.</p>
+          </div>
+          
+          <div class="expertise-card">
+            <div class="expertise-card__icon">🤝</div>
+            <h3 class="expertise-card__title">M&A Integration</h3>
+            <p class="expertise-card__desc">Leading acquisitions and integrations that expand capabilities while preserving culture and operational momentum.</p>
+          </div>
+          
+          <div class="expertise-card">
+            <div class="expertise-card__icon">🧬</div>
+            <h3 class="expertise-card__title">Biopharma Commercialization</h3>
+            <p class="expertise-card__desc">Building commercial organizations that translate clinical innovation into patient access and sustainable revenue.</p>
+          </div>
+          
+          <div class="expertise-card">
+            <div class="expertise-card__icon">⚖️</div>
+            <h3 class="expertise-card__title">Regulatory Navigation</h3>
+            <p class="expertise-card__desc">Working with FDA, payers, and compliance teams to bring products to market while managing risk appropriately.</p>
+          </div>
+          
+          <div class="expertise-card">
+            <div class="expertise-card__icon">👥</div>
+            <h3 class="expertise-card__title">Executive Team Building</h3>
+            <p class="expertise-card__desc">Recruiting, developing, and retaining high-performing leadership teams capable of executing through complexity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        // Header scroll effect
-        const header = document.querySelector('.header');
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 50) {
-                header.classList.add('is-scrolled');
-            } else {
-                header.classList.remove('is-scrolled');
-            }
-        }, { passive: true });
+    <!-- Featured Experience -->
+    <section>
+      <div class="container">
+        <p class="section__eyebrow">Career Highlight</p>
+        <h2 class="section__title">Biote: From Growth Stage to NASDAQ</h2>
+        
+        <div style="max-width: 720px;">
+          <p>As CEO of Biote, I led the company through its most transformative period—from a promising growth-stage company to a publicly traded leader in hormone optimization therapy.</p>
+          
+          <p>The journey required building every element of a public-company-ready organization: investor relations, governance infrastructure, regulatory compliance, and a commercial engine capable of supporting our growth trajectory.</p>
+          
+          <div class="metrics" style="margin: 2.5rem 0;">
+            <div class="metric">
+              <p class="metric__value">$XXM</p>
+              <p class="metric__label">Revenue at IPO</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">XX%</p>
+              <p class="metric__label">Annual Growth</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">X,XXX</p>
+              <p class="metric__label">Clinics Served</p>
+            </div>
+            <div class="metric">
+              <p class="metric__value">XXX</p>
+              <p class="metric__label">Employees</p>
+            </div>
+          </div>
+          
+          <a href="/track-record.html" class="btn btn--secondary">View Full Track Record</a>
+        </div>
+      </div>
+    </section>
 
-        // Intersection Observer for scroll animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            root: null,
-            rootMargin: '0px 0px -10% 0px',
-            threshold: 0.1
-        });
+    <!-- Quote -->
+    <section class="section--navy">
+      <div class="container">
+        <div class="quote-block" style="background: rgba(255,255,255,0.05); border-left-color: var(--gold);">
+          <p class="quote-block__text" style="color: white;">"Terry brings the rare combination of strategic vision and operational discipline. He understands what it takes to build companies that last."</p>
+          <p class="quote-block__cite" style="color: rgba(255,255,255,0.7);"><strong style="color: white;">[Name]</strong>, [Title, Company]</p>
+        </div>
+      </div>
+    </section>
 
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
+    <!-- Board Focus -->
+    <section>
+      <div class="container">
+        <div style="max-width: 720px;">
+          <p class="section__eyebrow">Board Interests</p>
+          <h2 class="section__title">Where I can add value</h2>
+          
+          <p>I'm seeking board positions where my experience scaling healthcare companies through critical transitions can make a meaningful difference. I'm particularly interested in:</p>
+          
+          <ul style="margin: 1.5rem 0 2rem 1.5rem; color: var(--text-light);">
+            <li style="margin-bottom: 0.75rem;"><strong style="color: var(--navy);">Growth-stage healthcare companies</strong> preparing for their next phase</li>
+            <li style="margin-bottom: 0.75rem;"><strong style="color: var(--navy);">Biopharma companies</strong> building commercial capabilities</li>
+            <li style="margin-bottom: 0.75rem;"><strong style="color: var(--navy);">Healthcare services businesses</strong> scaling through acquisitions</li>
+            <li style="margin-bottom: 0.75rem;"><strong style="color: var(--navy);">Companies approaching or recently completing</strong> public offerings</li>
+          </ul>
+          
+          <a href="/contact.html" class="btn btn--primary">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
 
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    mainNav.classList.remove('is-open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                    const headerHeight = header.offsetHeight;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                    target.setAttribute('tabindex', '-1');
-                    target.focus({ preventScroll: true });
-                }
-            });
-        });
+    <!-- Media Kit CTA -->
+    <section class="section--cream">
+      <div class="container">
+        <div class="media-kit">
+          <div class="media-kit__text">
+            <h3>Board Bio & Media Kit</h3>
+            <p>Download my executive bio, headshots, and speaking topics for board consideration or media inquiries.</p>
+          </div>
+          <a href="/assets/terry-weber-media-kit.pdf" class="btn btn--gold">Download Media Kit</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        // Update current year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Terry Weber</p>
+          <p class="footer-tagline">Healthcare executive and board director with 25+ years of experience building companies that transform patient lives.</p>
+        </div>
+        
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/track-record.html">Track Record</a></li>
+            <li><a href="/thought-leadership.html">Insights</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:terry@terryweber.com">terry@terryweber.com</a></li>
+            <li><a href="https://linkedin.com/in/terryweber" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Terry Weber. All rights reserved.</p>
+        <p>Site by <a href="https://mygeekmac.com" style="color: var(--gold);">Josh Pirtle</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
 </body>
 </html>
