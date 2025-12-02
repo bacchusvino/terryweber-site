@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights | Terry Weber - Healthcare Executive</title>
+  <meta name="description" content="Articles, speaking engagements, and perspectives from Terry Weber on healthcare leadership, company building, and industry trends.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <style>
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-lg);
+    }
+    
+    @media (max-width: 768px) {
+      .insights-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .insight-card {
+      background: white;
+      border: 1px solid var(--rule);
+      padding: var(--space-lg);
+      transition: all 0.3s ease;
+      display: block;
+      color: inherit;
+    }
+    
+    .insight-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(26, 35, 50, 0.1);
+      color: inherit;
+    }
+    
+    .insight-card__type {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+    
+    .insight-card__title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--navy);
+      margin-bottom: var(--space-sm);
+      line-height: 1.4;
+    }
+    
+    .insight-card__meta {
+      font-size: 0.875rem;
+      color: var(--warm-gray);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .insight-card__desc {
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    
+    .speaking-item {
+      padding: var(--space-lg) 0;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: var(--space-lg);
+      align-items: start;
+    }
+    
+    .speaking-item:last-child {
+      border-bottom: none;
+    }
+    
+    .speaking-item__date {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      font-weight: 600;
+    }
+    
+    .speaking-item__title {
+      font-family: var(--font-display);
+      font-size: 1.125rem;
+      color: var(--navy);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .speaking-item__venue {
+      color: var(--text-light);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .speaking-item__link {
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 600px) {
+      .speaking-item {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+      }
+    }
+    
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+    
+    @media (max-width: 768px) {
+      .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .topics-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .topic-card {
+      background: white;
+      border: 1px solid var(--rule);
+      padding: var(--space-md);
+    }
+    
+    .topic-card__title {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      color: var(--navy);
+      margin-bottom: var(--space-xs);
+    }
+    
+    .topic-card__desc {
+      font-size: 0.9375rem;
+      color: var(--text-light);
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-brand">Terry Weber</a>
+      
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="site-nav" id="main-nav">
+        <a href="/about.html">About</a>
+        <a href="/track-record.html">Track Record</a>
+        <a href="/thought-leadership.html" aria-current="page">Insights</a>
+        <a href="/contact.html" class="nav-cta">Connect</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">Insights</h1>
+        <p class="page-header__desc">Perspectives on healthcare leadership, company building, and industry trends.</p>
+      </div>
+    </div>
+
+    <!-- Speaking Topics -->
+    <section>
+      <div class="container">
+        <p class="section__eyebrow">Speaking</p>
+        <h2 class="section__title">Topics I Speak On</h2>
+        <p class="section__intro">Available for keynotes, panels, and private sessions on these topics.</p>
+        
+        <div class="topics-grid">
+          <div class="topic-card">
+            <h3 class="topic-card__title">Taking Healthcare Companies Public</h3>
+            <p class="topic-card__desc">Lessons from leading a NASDAQ IPO: what to prepare, what to expect, and what I wish I'd known.</p>
+          </div>
+          
+          <div class="topic-card">
+            <h3 class="topic-card__title">Building Commercial Organizations</h3>
+            <p class="topic-card__desc">Creating the sales and marketing infrastructure to scale healthcare companies from $10M to $100M+.</p>
+          </div>
+          
+          <div class="topic-card">
+            <h3 class="topic-card__title">Governance for Growth</h3>
+            <p class="topic-card__desc">How boards and leadership teams can work together to navigate critical company transitions.</p>
+          </div>
+          
+          <div class="topic-card">
+            <h3 class="topic-card__title">M&A in Healthcare</h3>
+            <p class="topic-card__desc">Evaluating, executing, and integrating acquisitions while preserving culture and momentum.</p>
+          </div>
+          
+          <div class="topic-card">
+            <h3 class="topic-card__title">CEO Transitions</h3>
+            <p class="topic-card__desc">Preparing organizations for leadership change and setting up successors for success.</p>
+          </div>
+          
+          <div class="topic-card">
+            <h3 class="topic-card__title">The Future of Hormone Health</h3>
+            <p class="topic-card__desc">Where the industry is headed and what it means for patients, providers, and investors.</p>
+          </div>
+        </div>
+        
+        <p style="margin-top: var(--space-xl); color: var(--text-light);">Interested in having me speak at your event? <a href="/contact.html">Get in touch</a>.</p>
+      </div>
+    </section>
+
+    <!-- Speaking Engagements -->
+    <section class="section--cream">
+      <div class="container">
+        <p class="section__eyebrow">Past Appearances</p>
+        <h2 class="section__title">Speaking Engagements</h2>
+        
+        <div style="max-width: 800px;">
+          <div class="speaking-item">
+            <p class="speaking-item__date">Month 20XX</p>
+            <div>
+              <h3 class="speaking-item__title">[Talk Title or Panel Name]</h3>
+              <p class="speaking-item__venue">[Conference/Event Name], [Location]</p>
+              <a href="#" class="speaking-item__link">Watch Video →</a>
+            </div>
+          </div>
+          
+          <div class="speaking-item">
+            <p class="speaking-item__date">Month 20XX</p>
+            <div>
+              <h3 class="speaking-item__title">[Talk Title or Panel Name]</h3>
+              <p class="speaking-item__venue">[Conference/Event Name], [Location]</p>
+            </div>
+          </div>
+          
+          <div class="speaking-item">
+            <p class="speaking-item__date">Month 20XX</p>
+            <div>
+              <h3 class="speaking-item__title">[Talk Title or Panel Name]</h3>
+              <p class="speaking-item__venue">[Conference/Event Name], [Location]</p>
+            </div>
+          </div>
+          
+          <div class="speaking-item">
+            <p class="speaking-item__date">Month 20XX</p>
+            <div>
+              <h3 class="speaking-item__title">[Podcast Appearance]</h3>
+              <p class="speaking-item__venue">[Podcast Name]</p>
+              <a href="#" class="speaking-item__link">Listen →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles & Media -->
+    <section>
+      <div class="container">
+        <p class="section__eyebrow">Articles & Media</p>
+        <h2 class="section__title">Featured Writing</h2>
+        
+        <div class="insights-grid">
+          <a href="#" class="insight-card">
+            <p class="insight-card__type">Article</p>
+            <h3 class="insight-card__title">[Article Title Goes Here]</h3>
+            <p class="insight-card__meta">[Publication Name] · Month 20XX</p>
+            <p class="insight-card__desc">[Brief description or excerpt from the article]</p>
+          </a>
+          
+          <a href="#" class="insight-card">
+            <p class="insight-card__type">Interview</p>
+            <h3 class="insight-card__title">[Interview Title Goes Here]</h3>
+            <p class="insight-card__meta">[Publication Name] · Month 20XX</p>
+            <p class="insight-card__desc">[Brief description of the interview topics]</p>
+          </a>
+          
+          <a href="#" class="insight-card">
+            <p class="insight-card__type">Press</p>
+            <h3 class="insight-card__title">[Press Coverage Title]</h3>
+            <p class="insight-card__meta">[Publication Name] · Month 20XX</p>
+            <p class="insight-card__desc">[Brief description of the coverage]</p>
+          </a>
+          
+          <a href="#" class="insight-card">
+            <p class="insight-card__type">LinkedIn</p>
+            <h3 class="insight-card__title">[LinkedIn Post Title]</h3>
+            <p class="insight-card__meta">Month 20XX</p>
+            <p class="insight-card__desc">[Brief description or key takeaway]</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media Kit CTA -->
+    <section class="section--cream">
+      <div class="container">
+        <div class="media-kit">
+          <div class="media-kit__text">
+            <h3>Media Inquiries</h3>
+            <p>For speaking requests, interviews, or press inquiries, download my media kit or get in touch directly.</p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="/assets/terry-weber-media-kit.pdf" class="btn btn--gold">Download Media Kit</a>
+            <a href="/contact.html" class="btn btn--secondary" style="border-color: white; color: white;">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Terry Weber</p>
+          <p class="footer-tagline">Healthcare executive and board director with 25+ years of experience building companies that transform patient lives.</p>
+        </div>
+        
+        <div>
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/track-record.html">Track Record</a></li>
+            <li><a href="/thought-leadership.html">Insights</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <p class="footer-heading">Connect</p>
+          <ul class="footer-links">
+            <li><a href="mailto:terry@terryweber.com">terry@terryweber.com</a></li>
+            <li><a href="https://linkedin.com/in/terryweber" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Terry Weber. All rights reserved.</p>
+        <p>Site by <a href="https://mygeekmac.com" style="color: var(--gold);">Josh Pirtle</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
