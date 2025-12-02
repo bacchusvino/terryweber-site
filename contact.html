@@ -6,6 +6,11 @@
   <title>Contact | Terry Weber - Healthcare Executive</title>
   <meta name="description" content="Connect with Terry Weber for board opportunities, speaking engagements, or advisory discussions.">
   
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Terry Weber">
+  <meta property="og:description" content="Connect about board opportunities, speaking engagements, or advisory discussions.">
+  <meta property="og:image" content="https://terryweber.netlify.app/img/terry-weber-headshot.jpeg">
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +26,7 @@
     <div class="container">
       <a href="/" class="site-brand">Terry Weber</a>
       
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
         <span></span>
         <span></span>
         <span></span>
@@ -44,8 +49,9 @@
       </div>
     </div>
 
-    <section>
+    <section aria-labelledby="contact-title">
       <div class="container">
+        <h2 id="contact-title" class="visually-hidden">Contact Information</h2>
         <div class="contact-section">
           <div class="contact-info">
             <div class="contact-method">
@@ -54,13 +60,18 @@
             </div>
             
             <div class="contact-method">
+              <p class="contact-method__label">Phone</p>
+              <p class="contact-method__value"><a href="tel:+14056150399">405-615-0399</a></p>
+            </div>
+            
+            <div class="contact-method">
               <p class="contact-method__label">LinkedIn</p>
-              <p class="contact-method__value"><a href="https://linkedin.com/in/terryweber" target="_blank" rel="noopener">linkedin.com/in/terryweber</a></p>
+              <p class="contact-method__value"><a href="https://www.linkedin.com/in/terry-weber-17677020/" target="_blank" rel="noopener">linkedin.com/in/terry-weber</a></p>
             </div>
             
             <div class="contact-method">
               <p class="contact-method__label">Location</p>
-              <p class="contact-method__value">[City, State]</p>
+              <p class="contact-method__value">Irving, Texas</p>
             </div>
             
             <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--rule);">
@@ -72,17 +83,12 @@
                 <li style="margin-bottom: 0.5rem;">Industry conversations</li>
               </ul>
             </div>
-            
-            <div style="margin-top: var(--space-xl);">
-              <a href="/assets/terry-weber-board-bio.pdf" class="btn btn--secondary" style="width: 100%; text-align: center;">Download Board Bio</a>
-            </div>
           </div>
           
           <div class="contact-form">
             <h2 style="font-family: var(--font-display); font-size: 1.375rem; margin-bottom: var(--space-md);">Send a Message</h2>
             
-            <!-- Replace YOUR_FORM_ID with actual Formspree ID -->
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form action="https://formspree.io/f/xyzgnkwl" method="POST">
               <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
                 <input type="text" id="name" name="name" class="form-input" required>
@@ -123,17 +129,17 @@
     </section>
 
     <!-- For Executive Search Firms -->
-    <section class="section--cream">
+    <section class="section--cream" aria-labelledby="search-title">
       <div class="container">
         <div style="max-width: 720px;">
           <p class="section__eyebrow">For Search Professionals</p>
-          <h2 class="section__title">Executive Search Firms</h2>
+          <h2 id="search-title" class="section__title">Executive Search Firms</h2>
           
-          <p style="color: var(--text-light); margin-bottom: var(--space-md);">If you're conducting a board search and would like to discuss my background and availability, I'm happy to connect. You can download my materials below or reach out directly.</p>
+          <p style="color: var(--text-light); margin-bottom: var(--space-md);">If you're conducting a board search and would like to discuss my background and availability, I'm happy to connect. Please reach out directly via email or phone.</p>
           
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="/assets/terry-weber-board-bio.pdf" class="btn btn--primary">Download Board Bio</a>
-            <a href="/assets/terry-weber-media-kit.pdf" class="btn btn--secondary">Full Media Kit</a>
+            <a href="mailto:terry@terryweber.com" class="btn btn--primary">Email Me</a>
+            <a href="https://www.linkedin.com/in/terry-weber-17677020/" class="btn btn--secondary" target="_blank" rel="noopener">View LinkedIn</a>
           </div>
         </div>
       </div>
@@ -145,7 +151,7 @@
       <div class="footer-grid">
         <div>
           <p class="footer-brand">Terry Weber</p>
-          <p class="footer-tagline">Healthcare executive and board director with 25+ years of experience building companies that transform patient lives.</p>
+          <p class="footer-tagline">Transformation CEO who scales founder-led companies into industry leaders. 30+ years across healthcare, retail, automotive, and technology.</p>
         </div>
         
         <div>
@@ -163,14 +169,15 @@
           <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="mailto:terry@terryweber.com">terry@terryweber.com</a></li>
-            <li><a href="https://linkedin.com/in/terryweber" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="tel:+14056150399">405-615-0399</a></li>
+            <li><a href="https://www.linkedin.com/in/terry-weber-17677020/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li>Irving, Texas</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p>&copy; 2025 Terry Weber. All rights reserved.</p>
-        <p>Site by <a href="https://mygeekmac.com" style="color: var(--gold);">Josh Pirtle</a></p>
       </div>
     </div>
   </footer>
@@ -178,10 +185,26 @@
   <script>
     const navToggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.site-nav');
-    navToggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', isOpen);
-    });
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
   </script>
+  
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </body>
 </html>
